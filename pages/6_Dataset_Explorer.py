@@ -2,6 +2,7 @@
 Page 6: Dataset Explorer, Schema Dictionary, and Audit Reporting.
 """
 
+import os
 import streamlit as st
 import pandas as pd
 
