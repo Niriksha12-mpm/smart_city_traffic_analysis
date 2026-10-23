@@ -49,6 +49,46 @@ with k4:
 
 st.markdown("---")
 
+# Horizontal 4-Factor Breakdown Banner
+st.subheader("⚖️ The 4 Factors Evaluated in Horizontal Layout")
+st.markdown("Every corridor is diagnosed across these four factors arranged horizontally:")
+
+hf1, hf2, hf3, hf4 = st.columns(4)
+with hf1:
+    st.markdown("""
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center;">
+        <span style="font-size: 0.75rem; font-weight: bold; color: #64748b; text-transform: uppercase;">Factor 1: Road Saturation</span>
+        <div style="font-size: 1.25rem; font-weight: bold; color: #0284c7; margin: 4px 0;">Volume ÷ Capacity</div>
+        <p style="font-size: 0.75rem; color: #475569; margin: 0;">Weight: <b>35%</b> (Physical demand vs supply)</p>
+    </div>
+    """, unsafe_allow_html=True)
+with hf2:
+    st.markdown("""
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center;">
+        <span style="font-size: 0.75rem; font-weight: bold; color: #64748b; text-transform: uppercase;">Factor 2: Speed Loss</span>
+        <div style="font-size: 1.25rem; font-weight: bold; color: #e11d48; margin: 4px 0;">Velocity Deficit</div>
+        <p style="font-size: 0.75rem; color: #475569; margin: 0;">Weight: <b>35%</b> (Speed drop below limit)</p>
+    </div>
+    """, unsafe_allow_html=True)
+with hf3:
+    st.markdown("""
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center;">
+        <span style="font-size: 0.75rem; font-weight: bold; color: #64748b; text-transform: uppercase;">Factor 3: Jam Frequency</span>
+        <div style="font-size: 1.25rem; font-weight: bold; color: #d97706; margin: 4px 0;">Severe Congestion %</div>
+        <p style="font-size: 0.75rem; color: #475569; margin: 0;">Weight: <b>20%</b> (Fraction of hours V/C ≥ 0.85)</p>
+    </div>
+    """, unsafe_allow_html=True)
+with hf4:
+    st.markdown("""
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center;">
+        <span style="font-size: 0.75rem; font-weight: bold; color: #64748b; text-transform: uppercase;">Factor 4: Stop-and-Go</span>
+        <div style="font-size: 1.25rem; font-weight: bold; color: #059669; margin: 4px 0;">Speed Volatility</div>
+        <p style="font-size: 0.75rem; color: #475569; margin: 0;">Weight: <b>10%</b> (Flow jerkiness & shockwaves)</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown("---")
+
 # Section 1: Ranked Hotspots Bar Chart
 st.subheader("🏆 Top Ranked Urban Congestion Corridors")
 
